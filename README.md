@@ -1,7 +1,7 @@
 # Cryptocurrency_Price_Analysis
-Price Analysis and Data Cleaning Project 
+## Price Analysis and Data Cleaning Project 
 The project can be considered intermediate to advanced for someone with a solid understanding of data analysis and visualization in Python. It involves several key areas:
-	1. Data Cleaning and Handling Missing Values:
+	1. **Data Cleaning and Handling Missing Values:**
 		○ Tasks: Identifying and filling missing values, dropping specific dates.
 		○ Techniques: Backward filling (using bfill), checking for NaNs, visual inspection.
 	2. Exploratory Data Analysis (EDA):
@@ -13,4 +13,3 @@ The project can be considered intermediate to advanced for someone with a solid 
 	4. Data Visualization:
 		○ Tasks: Plotting data distributions, cumulative distributions, and filtered data.
 		○ Techniques: matplotlib, seaborn, and different plot types like histograms, KDE plots, and regression plots.
-![image](https://github.com/user-attachments/assets/ea6bd40d-c624-4644-b94a-b85152654631)
