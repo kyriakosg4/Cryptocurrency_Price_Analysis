@@ -2,7 +2,7 @@
 ## Price Analysis and Data Cleaning Project 
 The project can be considered intermediate to advanced for someone with a solid understanding of data analysis and visualization in Python. It involves several key areas:
 
-	1. **Data Cleaning and Handling Missing Values:**
+	1. Data Cleaning and Handling Missing Values:
 		* Tasks: Identifying and filling missing values, dropping specific dates.
 		* Techniques: Backward filling (using bfill), checking for NaNs, visual inspection.
 	2. Exploratory Data Analysis (EDA):
