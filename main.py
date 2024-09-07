@@ -1,10 +1,10 @@
-# import the libraries that are going to be used 
+# import the libraries that are going to be used
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import os # import os to make a dynamic path to any folder or file in repo
+import os  # import os to make a dynamic path to any folder or file in repo
 
 
 # DataFrame
@@ -12,26 +12,26 @@ import os # import os to make a dynamic path to any folder or file in repo
 # This gets the "current working directory" (cwd) or in other words, the "path to this file" i.e main.py, and stores it in the `script_dir` variable.
 script_dir = os.getcwd()
 # Joining the "cwd" that is stored in the `script_dir` variable directly with the data's filename to avoid pasting or writing the entire path to the `btc-eth-prices-outliers.csv` file.
-data_path = os.path.join(script_dir, 'btc-eth-prices-outliers.csv', parse_dates=True, index_col = 0)
+data_path = os.path.join(script_dir, "btc-eth-prices-outliers.csv")
 # Another benefit will be if you want to store the data in a separate folder (example folder name: data), then all you have to change is 'btc-eth-prices-outliers.csv'
 # Example: 'data/btc-eth-prices-outliers.csv'
 # If you want to store the script `main.py` in a separate folder (example folder name: script), then all you have to change is 'btc-eth-prices-outliers.csv'
 # Example: '../btc-eth-prices-outliers.csv' (writing '../' tells python that you want to go one folder up)
 # if you want to store both in each in their own separate folder. the code will look like this.
-# Example: 
-# data_path = os.path.join(script_dir, '../data/btc-eth-prices-outliers.csv', parse_dates=True, index_col = 0)
+# Example:
+# data_path = os.path.join(script_dir, '../data/btc-eth-prices-outliers.csv')
 
 # Print these if you want to see for yourself.
-print(script_dir) 
+print(script_dir)
 print(data_path)
 
 # Finally reading the csv file with the directory stored in the data_path variable.
-df = pd.read_csv(data_path) 
+df = pd.read_csv(data_path, parse_dates=True, index_col=0)
 
-#df = pd.read_csv(r"C:\Users\User\Desktop\FreeCodeCamp\Excel\btc-eth-prices-outliers.csv", parse_dates=True, index_col = 0)
+# df = pd.read_csv(r"C:\Users\User\Desktop\FreeCodeCamp\Excel\btc-eth-prices-outliers.csv", parse_dates=True, index_col = 0)
 
 # Read df will this method will show the same data frame but it will result in a much cleaner code and you don't have to expose the entire path to this folder or file.
-df.head() 
+df.head()
 
 
 # Visual inspection
